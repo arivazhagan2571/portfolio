@@ -1,199 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #c91616;
-        }
-
-        header {
-            background-color: #2008fa;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-            position: relative; /* Add this */
-        }
-
-        .header-content h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Add styles for the round profile picture */
-        .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .section-content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
-
-        .download-button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
-        }
-
-        .download-button:hover {
-            background-color: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+
     <header>
-        <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="35179380-de5e-4140-b1bd-aea9ae60d143.jpg" alt="Your Profile Picture" class="profile-picture">
-            <h1>Arivazhagan R</h1>
-            <p>Am Computer sicence student</p>
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h1>ARIVAZHAGAN R</h1>
+            <p>Web Developer</p>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-           
-        </ul>
-    </nav>
-
     <section id="about">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>I'm a <b>web development</b> expert who is passionate about creating dynamic and user-friendly websites. 
-                I'm driven by the desire to craft high-performance web applications that enhance user experience and provide
-                 seamless digital solutions. With over so committed to helping others learn more about web technologies, 
-                 best practices, and how to build secure and scalable websites.</p>
-
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="section-content">
-            <h2>Education</h2>
-            <p>B.Sc.computer sicence</p>
-            
-            
-        </div>
+        <h2>About Me</h2>
+        <p>I'm a web development expert who is passionate about creating dynamic and user-friendly websites. I'm driven by the desire to craft high-performance web applications that enhance user experience and provide seamless digital solutions. I'm also committed to helping others learn more about web technologies, best practices, and how to build secure and scalable websites.</p>
     </section>
 
     <section id="skills">
-        <div class="section-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>React</li>
-                <li>Mern</li>
-                <li>Cloud Computing</li>
-                <li>Python</li>
-                <li>Spring</li>
-                <li>ML & AI</li>
-                <li>java</li>
-                <li>c++</li>
-                <li>Java script</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#">E Cart website</a></li>
-                <li><a href="#">Cloud Security IBM</a></li>
-                <li><a href="#">IBM chatbot</a></li>
-                <li><a href="#">College Portal</a></li> 
-                <!-- Add more project links here -->
-            </ul>
+        <h2>My Skills</h2>
+        <div class="skill-bar">
+            <p>HTML & CSS</p>
+            <div class="progress"><div class="html"></div></div>
+            <p>JavaScript</p>
+            <div class="progress"><div class="js"></div></div>
+            <p>React.js</p>
+            <div class="progress"><div class="react"></div></div>
         </div>
     </section>
 
     <section id="resume">
-    
-        <div class="section-content">
-            <center>
-            <h2>Resume</h2>
-            <a href="file.pdf" target="_blank" class="download-button">Download CV</a>
-        </center>
-        </div>
-        
+        <h2>Resume</h2>
+        <p>"I am a passionate Web Developer with expertise in creating modern, user-friendly, and responsive websites. With experience in front-end and back-end development, I specialize in HTML, CSS, JavaScript, and frameworks like React.js. My goal is to build high-quality web applications that enhance user experiences. Over the years, I have worked on various projects, collaborating with teams to bring ideas to life. I am always eager to learn and stay updated with the latest trends in web development."</p>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Arivazhagan R</p>
-    </footer>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid">
+            <div class="item">Project 1</div>
+            <div class="item">Project 2</div>
+            <div class="item">Project 3</div>
+        </div>
+    </section>
 
-    <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: arivazhagan2574@gmail.com</p>
+        <p>Phone: 9524079622</p>
+    </section>
 
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
-</html>
+    </html>
